@@ -46,3 +46,12 @@ auth = OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 stream = Stream(auth, l,tweet_mode='extended')
 stream.filter(track=["#trump","#elections2020"], languages=["en"])
+
+
+
+
+
+
+
+
+
