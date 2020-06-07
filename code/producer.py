@@ -25,7 +25,11 @@ def cleantweet(data):
     tweet["language"]="en"
     tweet["location"]=rawtweet["user"]["location"]
     tweet["retweet"]=rawtweet["retweet_count"]
-   
+    if "extended_tweet" in rawtweet:
+        tweet["text"] = rawtweet["extended_tweet"]["full_text"]
+    else:
+        tweet["text"] = rawtweet["text"]
+    return json.dumps(tweet)
     return json.dumps(tweet)
 
 
