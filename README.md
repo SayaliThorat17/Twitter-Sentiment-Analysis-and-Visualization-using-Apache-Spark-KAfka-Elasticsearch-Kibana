@@ -30,4 +30,9 @@ After sentiment analysis we represent the data visually on a Kibana dashboard wi
 
 
 
+![Presidential Elections 2020 Complete Dashboard -1 ](https://user-images.githubusercontent.com/42825746/83846363-78ea7700-a6d8-11ea-80f5-83527f1c9bf2.png)
+
+
+
+
 
