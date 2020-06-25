@@ -25,6 +25,21 @@ def getSqlContextInstance(sparkContext):
     return globals()['sqlContextSingletonInstance']
 
 
+def dosentiment(tweet):
+    #dict_data = json.loads(tweet)
+    t = TextBlob(tweet)
+    #t = TextBlob(tweet["text"])
+    print (t.sentiment.polarity)
+    if t.sentiment.polarity < 0:
+        sentiment = "negative"
+    elif t.sentiment.polarity == 0:
+        sentiment = "neutral"
+    else:
+        sentiment = "positive"
+    print(sentiment)
+    return sentiment
+
+
 def process(time, rdd):
     print("========= %s =========" % str(time))
     try:

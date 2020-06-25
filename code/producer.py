@@ -30,7 +30,6 @@ def cleantweet(data):
     else:
         tweet["text"] = rawtweet["text"]
     return json.dumps(tweet)
-    return json.dumps(tweet)
 
 
 
